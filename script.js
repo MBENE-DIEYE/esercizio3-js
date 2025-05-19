@@ -25,3 +25,8 @@ console.log(nome,cognome)
 // ----------------------------------------------------destructuring con nome di variabili-------------
 let{prenom,surnom}=person
 console.log(prenom,surnom)
+// ----------------------------------------------copia di un array-------------------------
+const mioarray=[23,45,67,"fsfd","yhtrg"]
+const copia =[...mioarray]
+console.log(mioarray)
+console.log(copia)
