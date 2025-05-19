@@ -69,8 +69,7 @@ console.log(somm)
 // ---------------------------------------------destructuring con rest operator---------------
 
 const numeri =[2,4,5,7,8,9,0]
-let [numero1,numero2]= numeri
-let [, , ...numeris]=numeri
+let [numero1,numero2,...numeris]= numeri
 console.log(numero1,numero2)
 console.log(numeris)
 
@@ -82,8 +81,13 @@ const mioOggetto={
     anno:2003,
     transmizione:"ded"
 }
-let{marca,modello}=mioOggetto
-let{...ogget}= mioOggetto
+let{marca,modello,...altrinformazioni}=mioOggetto
 console.log(marca,modello)
-console.log(ogget)
+console.log(altrinformazioni)
 
+// ------------------conversione di un oggetto in un stringa---------------------
+ const javascript ={
+    nome:"sono una laguage"
+ }
+ const javascriptjson= JSON.stringify(javascript)
+ console.log(javascriptjson)
