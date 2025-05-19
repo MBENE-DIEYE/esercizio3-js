@@ -35,3 +35,13 @@ console.log(copia)
  const array3=[5,6,7,8,9]
  const unio=[...array2,...array3]
  console.log(unio)
+//  -----------------------------------copia di un oggetto con propietà aggiuntive---------------------
+
+const person1={
+    nome:"mbene",
+    cognome:"dieye",
+    eta:24
+}
+const copie={...person1,mansione:"student"}
+console.log(person1)
+console.log(copie)
