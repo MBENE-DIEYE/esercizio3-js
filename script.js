@@ -85,9 +85,15 @@ let{marca,modello,...altrinformazioni}=mioOggetto
 console.log(marca,modello)
 console.log(altrinformazioni)
 
-// ------------------conversione di un oggetto in un stringa---------------------
+// ------------------conversione di un oggetto in una stringa---------------------
  const javascript ={
-    nome:"sono una laguage"
+    nome:"sono una language"
  }
  const javascriptjson= JSON.stringify(javascript)
  console.log(javascriptjson)
+
+//  -------------------conversione di una stringa json in oggetto--------------------
+
+const jsonjavascript= '{"language":"javascript"}'
+const javascriptreale= JSON.parse(jsonjavascript)
+console.log(javascriptreale)
