@@ -9,8 +9,8 @@ console.log("il primo è:"+ elemento1 , "il terza elemento è:" +terzaelemento)
 
 // --------------------------------------------------destructuring con valori predefiniti------------------
 const array1=[24,45,676,67]
-let [valore1,valore2,valore3,valore4,...valoremanca] =array1
-console.log(valore1,valore2,valore3,valore4,valoremanca)
+let [valore1,valore2,valore3,valore4,valore5] =array1
+console.log(valore1,valore2,valore3,valore4,valore5)
 
 // -------------------------------------------------estrazione di proprietà----------------
 
@@ -25,6 +25,16 @@ console.log(nome,cognome)
 // ----------------------------------------------------destructuring con nome di variabili-------------
 let{prenom,surnom}=person
 console.log(prenom,surnom)
+
+
+// -------------------------------------destructuring con valori predefiniti oggetto----------------------
+const user ={
+    username:"fbgf",
+    password:"cfjf",
+    age:23
+}
+let {username,password,age,mansione}=user
+console.log(username,password,age,mansione)
 // ----------------------------------------------copia di un array-------------------------
 const mioarray=[23,45,67,"fsfd","yhtrg"]
 const copia =[...mioarray]
