@@ -55,3 +55,13 @@ const person1={
 const copie={...person1,mansione:"student"}
 console.log(person1)
 console.log(copie)
+
+// ---------------------------------------------funzione con parametri variabili------------------------
+function sommadegliArgomenti(arg1,arg2,...args){
+    return arg1 + arg2 + args
+}
+const somma= sommadegliArgomenti(2,4,1,9,8)
+const somm= sommadegliArgomenti(4,6,7,3)
+ 
+console.log(somma)
+console.log(somm)
