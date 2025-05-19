@@ -65,3 +65,11 @@ const somm= sommadegliArgomenti(4,6,7,3)
  
 console.log(somma)
 console.log(somm)
+
+// ---------------------------------------------destructuring con rest operator---------------
+
+const numeri =[2,4,5,7,8,9,0]
+let [numero1,numero2]= numeri
+let [, , ...numeris]=numeri
+console.log(numero1,numero2)
+console.log(numeris)
