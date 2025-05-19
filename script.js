@@ -30,3 +30,8 @@ const mioarray=[23,45,67,"fsfd","yhtrg"]
 const copia =[...mioarray]
 console.log(mioarray)
 console.log(copia)
+// --------------------------------unione di due array--------------------
+ const array2=[1,2,3,4]
+ const array3=[5,6,7,8,9]
+ const unio=[...array2,...array3]
+ console.log(unio)
