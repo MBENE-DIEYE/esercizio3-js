@@ -73,3 +73,17 @@ let [numero1,numero2]= numeri
 let [, , ...numeris]=numeri
 console.log(numero1,numero2)
 console.log(numeris)
+
+//--------------------------------------------------destructuring oggetto con rest operator-----------------------
+
+const mioOggetto={
+    marca:"ffdg",
+    modello:"fdd",
+    anno:2003,
+    transmizione:"ded"
+}
+let{marca,modello}=mioOggetto
+let{...ogget}= mioOggetto
+console.log(marca,modello)
+console.log(ogget)
+
