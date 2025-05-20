@@ -146,3 +146,21 @@ function templateLiteral(oggetto){
 
 const maperson =templateLiteral(person2)
 console.log(maperson)
+
+// ---------------------------------------------------utilizza console.log ----------------------------------
+
+let numero = 5;
+console.log(numero)
+
+let string ="sono una stringa";
+console.log(string)
+
+let arrayy = [2,3,"fef",5];
+console.log(arrayy)
+
+let profumo ={
+    nome: "my way",
+    colection : 2010,
+    color: "rosa"
+}
+console.log(profumo)
