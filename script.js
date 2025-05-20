@@ -170,3 +170,14 @@ console.log(profumo)
 let variable = "dfcfe"
 console.error("ha un valore specifico")
 console.warn("ha un altro valore specifico")
+
+// ----------------------------------utilizza console.table e console.group ---------------------------------
+
+const table =[
+    {marca: "toyota" ,modello:"vff", anno:2023},
+    {marca: "fff" ,modello:"edwd", anno:2013},
+    {marca: "ewr" ,modello:"frf", anno:2020}
+]
+
+console.table(table)
+console.group(table)
