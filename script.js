@@ -187,3 +187,9 @@ console.group(table)
 setTimeout (()=>{
     console.log("messaggio dop 3 secondi")
 },3000)
+
+// ------------------------------------setInterval--------------------------------
+
+setInterval(()=>{
+    console.log("messaggio dopo due secondi")
+},2000)
