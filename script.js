@@ -193,3 +193,13 @@ setTimeout (()=>{
 setInterval(()=>{
     console.log("messaggio dopo due secondi")
 },2000)
+
+// ----------------------------- interropre setInterval con clearInterval--------------
+
+const id = setInterval(()=>{
+    console.log("è paasato un secondo")
+},1000)
+
+setTimeout(()=>{
+    clearInterval(id)
+},5000)
