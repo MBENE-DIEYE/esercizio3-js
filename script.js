@@ -103,9 +103,23 @@ console.log(javascriptreale)
 
 // ---------------------------------------------manipolazione di dati json -------------------------------
 
-const list =[
-   ' {"nome":"mbene","cognome":"dieye"}',
-   ' {"nome":"elisa","cognome":"alba"}',
-]
+const list = `[
+    {"nome":"mbene","cognome":"dieye"},
+    {"nome":"elisa","cognome":"alba"},
+    {"nome":"marco","cognome":"shing"},
+    {"nome":"robert","cognome":"derms"}
+]`;
+
 const oggettoJavascript = JSON.parse(list)
-console.log(oggettoJavascript)
+// console.log(oggettoJavascript)
+oggettoJavascript.push({nome :"anna", cognome: "dea"})
+ const nuova= JSON.stringify(oggettoJavascript)
+ console.log(nuova)
+ 
+//  -------------------------stringa simplice con tamplate literal----------------------
+
+let nome1 ="anna"
+let cognome1 = "dea"
+
+let nomeCompleta =  ` ${nome1} ${cognome1}`
+console.log(nomeCompleta)
