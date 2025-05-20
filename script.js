@@ -181,3 +181,9 @@ const table =[
 
 console.table(table)
 console.group(table)
+
+// -------------------------------------------setTimeout ----------------------------------
+
+setTimeout (()=>{
+    console.log("messaggio dop 3 secondi")
+},3000)
