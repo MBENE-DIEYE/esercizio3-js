@@ -23,7 +23,7 @@ const person ={
 let{nome,cognome}=person
 console.log(nome,cognome)
 // ----------------------------------------------------destructuring con nome di variabili-------------
-let{prenom,surnom}=person
+let{nome: prenom,cognome:surnom}=person
 console.log(prenom,surnom)
 
 
