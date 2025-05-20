@@ -164,3 +164,9 @@ let profumo ={
     color: "rosa"
 }
 console.log(profumo)
+
+// ----------------------------utilizza console.error e console.warn------------------
+
+let variable = "dfcfe"
+console.error("ha un valore specifico")
+console.warn("ha un altro valore specifico")
