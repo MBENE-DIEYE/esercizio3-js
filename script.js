@@ -58,7 +58,10 @@ console.log(copie)
 
 // ---------------------------------------------funzione con parametri variabili------------------------
 function sommadegliArgomenti(arg1,arg2,...args){
-    return arg1 + arg2 + args
+ let som = args.reduce((acc,cur)=>{
+        return acc + cur
+    },0)
+    return   arg1 + arg2 + som
 }
 const somma= sommadegliArgomenti(2,4,1,9,8)
 const somm= sommadegliArgomenti(4,6,7,3)
@@ -68,32 +71,32 @@ console.log(somm)
 
 // ---------------------------------------------destructuring con rest operator---------------
 
-const numeri =[2,4,5,7,8,9,0]
-let [numero1,numero2,...numeris]= numeri
-console.log(numero1,numero2)
-console.log(numeris)
+// const numeri =[2,4,5,7,8,9,0]
+// let [numero1,numero2,...numeris]= numeri
+// console.log(numero1,numero2)
+// console.log(numeris)
 
-//--------------------------------------------------destructuring oggetto con rest operator-----------------------
+// //--------------------------------------------------destructuring oggetto con rest operator-----------------------
 
-const mioOggetto={
-    marca:"ffdg",
-    modello:"fdd",
-    anno:2003,
-    transmizione:"ded"
-}
-let{marca,modello,...altrinformazioni}=mioOggetto
-console.log(marca,modello)
-console.log(altrinformazioni)
+// const mioOggetto={
+//     marca:"ffdg",
+//     modello:"fdd",
+//     anno:2003,
+//     transmizione:"ded"
+// }
+// let{marca,modello,...altrinformazioni}=mioOggetto
+// console.log(marca,modello)
+// console.log(altrinformazioni)
 
-// ------------------conversione di un oggetto in una stringa---------------------
- const javascript ={
-    nome:"sono una language"
- }
- const javascriptjson= JSON.stringify(javascript)
- console.log(javascriptjson)
+// // ------------------conversione di un oggetto in una stringa---------------------
+//  const javascript ={
+//     nome:"sono una language"
+//  }
+//  const javascriptjson= JSON.stringify(javascript)
+//  console.log(javascriptjson)
 
-//  -------------------conversione di una stringa json in oggetto--------------------
+// //  -------------------conversione di una stringa json in oggetto--------------------
 
-const jsonjavascript= '{"language":"javascript"}'
-const javascriptreale= JSON.parse(jsonjavascript)
-console.log(javascriptreale)
+// const jsonjavascript= '{"language":"javascript"}'
+// const javascriptreale= JSON.parse(jsonjavascript)
+// console.log(javascriptreale)
