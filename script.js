@@ -133,3 +133,16 @@ let cità = "borgonovo"
 
 let informazioni = ` ${nome2} ${cognome2} ${età} ${cità}`
 console.log(informazioni)
+
+// -----------------------------funzione e template literal ---------------------------
+ const person2 ={
+        nome:"aram",
+        cognome:"diop",
+        età:12
+    }
+function templateLiteral(oggetto){
+    return ` ${oggetto.nome} ${oggetto.cognome} ${oggetto.età}  `
+}
+
+const maperson =templateLiteral(person2)
+console.log(maperson)
