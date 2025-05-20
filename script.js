@@ -123,3 +123,13 @@ let cognome1 = "dea"
 
 let nomeCompleta =  ` ${nome1} ${cognome1}`
 console.log(nomeCompleta)
+
+//  -------------------------stringa multilinea con tamplate literal----------------------
+
+let nome2 = "mionome"
+let cognome2 = "miocognome"
+let età = 35
+let cità = "borgonovo"
+
+let informazioni = ` ${nome2} ${cognome2} ${età} ${cità}`
+console.log(informazioni)
