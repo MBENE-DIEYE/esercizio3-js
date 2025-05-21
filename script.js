@@ -226,3 +226,14 @@ try{
 
 // -----------------------------uso di finaly ----------------------------------------
 
+try{
+    let nbr =2 ;
+    let quadrato =nb **2
+    console.log(quadrato)
+}
+catch(errore){
+    console.error(errore)
+}
+finally{
+    console.log("operation completata")
+}
