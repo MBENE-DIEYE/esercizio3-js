@@ -209,7 +209,10 @@ console.group(table)
 try{
     let nombre = 0;
     let  entier= 2
-    let result = nombre/entier
+    let result = entier/nombre
+    // console.log(result)
 } catch(errore){
     console.error(errore)
 }
+
+// --------------------------------------------------gestioni di più tipi di errori-------------------
