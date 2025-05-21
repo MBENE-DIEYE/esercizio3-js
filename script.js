@@ -184,22 +184,32 @@ console.group(table)
 
 // -------------------------------------------setTimeout ----------------------------------
 
-setTimeout (()=>{
-    console.log("messaggio dop 3 secondi")
-},3000)
+// setTimeout (()=>{
+//     console.log("messaggio dop 3 secondi")
+// },3000)
 
-// ------------------------------------setInterval--------------------------------
+// // ------------------------------------setInterval--------------------------------
 
-setInterval(()=>{
-    console.log("messaggio dopo due secondi")
-},2000)
+// setInterval(()=>{
+//     console.log("messaggio dopo due secondi")
+// },2000)
 
-// ----------------------------- interropre setInterval con clearInterval--------------
+// // ----------------------------- interropre setInterval con clearInterval--------------
 
-const id = setInterval(()=>{
-    console.log("è paasato un secondo")
-},1000)
+// const id = setInterval(()=>{
+//     console.log("è paasato un secondo")
+// },1000)
 
-setTimeout(()=>{
-    clearInterval(id)
-},5000)
+// setTimeout(()=>{
+//     clearInterval(id)
+// },5000)
+
+// -------------------------------------------------------------gestione di un errore simplice--------------------
+
+try{
+    let nombre = 0;
+    let  entier= 2
+    let result = nombre/entier
+} catch(errore){
+    console.error(errore)
+}
