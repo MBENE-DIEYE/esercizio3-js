@@ -209,10 +209,20 @@ console.group(table)
 try{
     let nombre = 0;
     let  entier= 2
-    let result = entier/nombre
+    let result = enter/nombre
     // console.log(result)
 } catch(errore){
     console.error(errore)
 }
 
 // --------------------------------------------------gestioni di più tipi di errori-------------------
+
+try{
+    let stringa = "23" + fggy
+    // console.log(stringa)
+}catch(errore){
+    console.error(errore)
+}
+
+// -----------------------------uso di finaly ----------------------------------------
+
