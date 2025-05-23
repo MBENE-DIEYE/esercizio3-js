@@ -207,21 +207,26 @@ console.group(table)
 // -------------------------------------------------------------gestione di un errore simplice--------------------
 
 try{
-    let nombre = 0;
-    let  entier= 2
-    let result = enter/nombre
-    // console.log(result)
+    let divisore = 0;
+    let  dividendo= 10;
+ if(divisore === 0){
+    throw new Error('il divisore non può essere zero')
+ }
+  console.log(dividendo/divisore)
 } catch(errore){
-    console.error(errore)
+    console.error('errore nel catch ',errore)
 }
 
 // --------------------------------------------------gestioni di più tipi di errori-------------------
 
 try{
-    let stringa = "23" + fggy
-    // console.log(stringa)
+     const name =12
+     if(typeof name === 'number'){
+        throw new Error('il nome deve essere una stringa')
+     } 
+     console.log(name)
 }catch(errore){
-    console.error(errore)
+    console.error('errore nel catch',errore)
 }
 
 // -----------------------------uso di finaly ----------------------------------------
